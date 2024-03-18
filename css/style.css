@@ -12,24 +12,19 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   transition: background-image 8s linear;
-  animation: changeBackground 15s infinite ;
+  animation: changeBackground 15s infinite;
 }
 @keyframes changeBackground {
   0% {
-    background-image:url("../images/monument.jpg");
+    background-image: url("../images/monument.jpg");
   }
   50% {
     background-image: url("../images/hawa\ mahal.jpg");
   }
   100% {
-    background-image:url("../images/keral.jpg");
+    background-image: url("../images/keral.jpg");
   }
 }
-
-
-
-
-
 
 /* nav {
   width: 100%;
@@ -75,17 +70,17 @@ nav .menu a:first-child {
   /* font-size: 24px; Adjust font size as needed */
 }
 
-
 .navbar {
   width: 100%;
   height: 15vh;
   background: rgba(0, 0, 0, 0.2);
   color: white;
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
   overflow: hidden;
+  padding: 20px;
 }
 .navbar a {
   float: right;
@@ -100,21 +95,25 @@ nav .menu a:first-child {
   color: black;
 }
 .navbar a.active {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 .navbar .icon {
   display: none;
 }
 @media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {display: none;}
+  .navbar a:not(:first-child) {
+    display: none;
+  }
   .navbar a.icon {
     float: right;
     display: block;
   }
 }
 @media screen and (max-width: 600px) {
-  .navbar.responsive {position: relative;}
+  .navbar.responsive {
+    position: relative;
+  }
   .navbar.responsive .icon {
     position: absolute;
     right: 0;
@@ -125,7 +124,6 @@ nav .menu a:first-child {
     display: block;
     text-align: left;
   }
-
 }
 
 main {
@@ -199,13 +197,20 @@ section .btntwo {
   color: #00b894;
 }
 
-@keyframes changetext
-{
-
- 0%{content:"Kerala";}
- 20%{content:"Jaipur";}
- 35%{content:"Agra";}
- 40%{content:"Kerala";}
- 100%{content:"Jaipur"}
-
+@keyframes changetext {
+  0% {
+    content: "Kerala";
+  }
+  20% {
+    content: "Jaipur";
+  }
+  35% {
+    content: "Agra";
+  }
+  40% {
+    content: "Kerala";
+  }
+  100% {
+    content: "Jaipur";
+  }
 }
